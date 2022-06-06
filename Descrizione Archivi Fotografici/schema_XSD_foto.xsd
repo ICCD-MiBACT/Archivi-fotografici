@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="acqinfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="p"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="ACQ"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="altformavail">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="list"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="CRF"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="archref">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="unittitle"/>
+				<xs:element ref="unitid"/>
+				<xs:element ref="physloc"/>
+			</xs:choice>
+			<xs:attribute name="title">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="id">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="arrangement">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="p"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="OGTO"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="bibliography">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="p" minOccurs="0"/>
+				<xs:element ref="bibref" minOccurs="0"/>
+				<xs:element ref="extref" minOccurs="0"/>
+				<xs:element ref="list" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="BIB"/>
+						<xs:enumeration value="BSE"/>
+						<xs:enumeration value="MST"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="bibref">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="title"/>
+				<xs:element ref="persname"/>
+				<xs:element ref="edition"/>
+				<xs:element ref="imprint"/>
+				<xs:element ref="num"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="c">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="did"/>
+				<xs:element ref="dsc"/>
+				<xs:element ref="descgrp"/>
+				<xs:element ref="originalsloc"/>
+				<xs:element ref="scopecontent"/>
+				<xs:element ref="controlaccess"/>
+				<xs:element ref="bibliography"/>
+				<xs:element ref="daogrp"/>
+				<xs:element ref="odd"/>
+				<xs:element ref="processinfo"/>
+				<xs:element ref="note"/>
+				<xs:element ref="phystech"/>
+				<xs:element ref="altformavail"/>
+				<xs:element ref="relatedmaterial"/>
+			</xs:choice>
+			<xs:attribute name="id" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="audience">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="external"/>
+						<xs:enumeration value="internal"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="level" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="fonds"/>
+						<xs:enumeration value="collection"/>
+						<xs:enumeration value="series"/>
+						<xs:enumeration value="subseries"/>
+						<xs:enumeration value="recordgrp"/>
+						<xs:enumeration value="file"/>
+						<xs:enumeration value="subfile"/>
+						<xs:enumeration value="item"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="chronitem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="date"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="chronlist">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="chronitem"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="controlaccess">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="name" minOccurs="0"/>
+				<xs:element ref="persname" maxOccurs="unbounded"/>
+				<xs:element ref="corpname" maxOccurs="unbounded"/>
+				<xs:element ref="geogname" maxOccurs="unbounded"/>
+				<xs:element ref="subject" maxOccurs="unbounded"/>
+				<xs:element ref="title" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="corpname">
+		<xs:complexType mixed="true">
+			<xs:attribute name="authfilenumber">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="id"/>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="AUTB"/>
+						<xs:enumeration value="MSTE"/>
+						<xs:enumeration value="NMCN"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="daogrp">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="refloc" minOccurs="0"/>
+				<xs:element ref="daoloc" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="daoloc">
+		<xs:complexType mixed="true">
+			<xs:attribute name="type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="manifest_auto"/>
+						<xs:enumeration value="manifest_external"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="href" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:anyURI"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="date">
+		<xs:complexType mixed="true">
+			<xs:simpleContent>
+				<xs:extension base="ST_date">
+					<xs:attribute name="encodinganalog">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="AGGD"/>
+								<xs:enumeration value="BIBD"/>
+								<xs:enumeration value="BSED"/>
+								<xs:enumeration value="CMPD"/>
+								<xs:enumeration value="DTZ"/>
+								<xs:enumeration value="INPR"/>
+								<xs:enumeration value="LRD"/>
+								<xs:enumeration value="MSTD"/>
+								<xs:enumeration value="RSTD"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="certainty">
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="ST_date">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:element name="descgrp">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="arrangement"/>
+				<xs:element ref="acqinfo"/>
+				<xs:element ref="otherfindaid"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="ISAD 3-4 conditions of access and use area"/>
+						<xs:enumeration value="OG"/>
+						<xs:enumeration value="TU"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="did">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="materialspec" maxOccurs="unbounded"/>
+				<xs:element ref="unittitle" maxOccurs="unbounded"/>
+				<xs:element ref="physdesc"/>
+				<xs:element ref="unitid" maxOccurs="unbounded"/>
+				<xs:element ref="physloc" minOccurs="0"/>
+				<xs:element ref="unitdate"/>
+				<xs:element ref="origination" maxOccurs="unbounded"/>
+				<xs:element ref="repository" minOccurs="0"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dimensions">
+		<xs:complexType mixed="true">
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="MIS"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dsc">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="c" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="edition">
+		<xs:complexType mixed="true">
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="BIBG"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="emph">
+		<xs:complexType mixed="true">
+			<xs:attribute name="altrender">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="DTMM"/>
+						<xs:enumeration value="DTT"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="extref">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="title" minOccurs="0"/>
+				<xs:element ref="date"/>
+			</xs:sequence>
+			<xs:attribute name="href">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="genreform">
+		<xs:complexType mixed="true">
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="MTC"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="id"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="geogname">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="emph"/>
+			</xs:choice>
+			<xs:attribute name="id">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="BIBL"/>
+						<xs:enumeration value="LRCC"/>
+						<xs:enumeration value="LRCL"/>
+						<xs:enumeration value="LRCP"/>
+						<xs:enumeration value="LRCR"/>
+						<xs:enumeration value="LRCS"/>
+						<xs:enumeration value="MSTL"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="imprint">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="geogname"/>
+				<xs:element ref="publisher"/>
+				<xs:element ref="date"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="item">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="title"/>
+				<xs:element ref="geogname"/>
+				<xs:element ref="date"/>
+				<xs:element ref="corpname"/>
+				<xs:element ref="archref"/>
+			</xs:choice>
+			<xs:attribute name="id">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="item"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="materialspec">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="num"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="OGTD"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="name">
+		<xs:complexType mixed="true">
+			<xs:simpleContent>
+				<xs:extension base="ST_name">
+					<xs:attribute name="encodinganalog" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="CTG"/>
+								<xs:enumeration value="EDIR"/>
+								<xs:enumeration value="INPP"/>
+								<xs:enumeration value="UBFP"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="authfilenumber">
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="ST_name">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Allestimenti"/>
+			<xs:enumeration value="Ambiente urbano"/>
+			<xs:enumeration value="Archeologia"/>
+			<xs:enumeration value="Architettura"/>
+			<xs:enumeration value="Arredi sacri"/>
+			<xs:enumeration value="Arti applicate"/>
+			<xs:enumeration value="Arti minori"/>
+			<xs:enumeration value="Calamità naturali"/>
+			<xs:enumeration value="Danni di guerra e protezioni antibelliche"/>
+			<xs:enumeration value="Epigrafia"/>
+			<xs:enumeration value="Etnoantropologia"/>
+			<xs:enumeration value="Eventi storici"/>
+			<xs:enumeration value="Grafica"/>
+			<xs:enumeration value="Industria"/>
+			<xs:enumeration value="Libri a stampa, manoscritti, documenti d'archivio"/>
+			<xs:enumeration value="Mosaico"/>
+			<xs:enumeration value="Natura"/>
+			<xs:enumeration value="Paesaggio"/>
+			<xs:enumeration value="Pittura"/>
+			<xs:enumeration value="Propaganda"/>
+			<xs:enumeration value="Pubblicità"/>
+			<xs:enumeration value="Reportage"/>
+			<xs:enumeration value="Restauri"/>
+			<xs:enumeration value="Ripresa aerea"/>
+			<xs:enumeration value="Ritratti"/>
+			<xs:enumeration value="Scultura"/>
+			<xs:enumeration value="Spettacolo"/>
+			<xs:enumeration value="Still life"/>
+			<xs:enumeration value="Strumenti e macchine"/>
+			<xs:enumeration value="Vita quotidiana"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="note">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="p"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="ISAD 3-6-1 note"/>
+						<xs:enumeration value="STCS"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="num">
+		<xs:complexType mixed="true">
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="BIBP"/>
+						<xs:enumeration value="BIBV"/>
+						<xs:enumeration value="INPC"/>
+						<xs:enumeration value="QNTN"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="odd">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="p"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="NSC"/>
+						<xs:enumeration value="OSS"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="originalsloc">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="p"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="INP"/>
+						<xs:enumeration value="INVN"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="origination">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="corpname"/>
+				<xs:element ref="persname"/>
+				<xs:element ref="name"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="PDF"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="otherfindaid">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="p"/>
+				<xs:element ref="bibref"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="ISAD 3-4-5 finding aids"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="p">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="date"/>
+				<xs:element ref="emph"/>
+				<xs:element ref="name"/>
+				<xs:element ref="num"/>
+				<xs:element ref="persname"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="persname">
+		<xs:complexType mixed="true">
+			<xs:attribute name="authfilenumber">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="id"/>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="AGGN"/>
+						<xs:enumeration value="AUTN"/>
+						<xs:enumeration value="BIBA"/>
+						<xs:enumeration value="BIBC"/>
+						<xs:enumeration value="CMPN"/>
+						<xs:enumeration value="FUR"/>
+						<xs:enumeration value="NMCN"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="role">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="physdesc">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="dimensions"/>
+				<xs:element ref="genreform"/>
+				<xs:element ref="physfacet"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="MT"/>
+						<xs:enumeration value="OGTC"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="label">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="specific"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="id">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="physfacet">
+		<xs:complexType mixed="true">
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="MTX"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="physloc">
+		<xs:complexType mixed="true">
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="CRFC"/>
+						<xs:enumeration value="LDCS"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="phystech">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="note"/>
+				<xs:element ref="chronlist"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="RST"/>
+						<xs:enumeration value="STC"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="processinfo">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="note"/>
+				<xs:element ref="p"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="AGG"/>
+						<xs:enumeration value="CMP"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="publisher">
+		<xs:complexType mixed="true">
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="BIBZ"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="refloc">
+		<xs:complexType>
+			<xs:attribute name="href" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="label" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="relatedmaterial">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="archref" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="RSE"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="repository">
+		<xs:complexType mixed="true">
+			<xs:choice>
+				<xs:element ref="name" minOccurs="0"/>
+			</xs:choice>
+			<xs:attribute name="id">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="scopecontent">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="p"/>
+				<xs:element ref="emph"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="DES"/>
+						<xs:enumeration value="ISE"/>
+						<xs:enumeration value="SGTD"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subject">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="title">
+		<xs:complexType mixed="true">
+			<xs:attribute name="type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="href">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="BIBT"/>
+						<xs:enumeration value="BSET"/>
+						<xs:enumeration value="MSTT"/>
+						<xs:enumeration value="SGLT"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="unitdate">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="extref"/>
+				<xs:element ref="emph"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="DT"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="formazione fondo"/>
+						<xs:enumeration value="opera"/>
+						<xs:enumeration value="foto"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="unitid">
+		<xs:complexType mixed="true">
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="ACC"/>
+						<xs:enumeration value="NCT"/>
+						<xs:enumeration value="NCTN"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="identifier">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="unittitle">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="title"/>
+				<xs:element ref="date"/>
+				<xs:element ref="geogname"/>
+				<xs:element ref="unitdate"/>
+			</xs:choice>
+			<xs:attribute name="encodinganalog">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="OGDN"/>
+						<xs:enumeration value="SGLA"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
