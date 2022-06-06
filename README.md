@@ -9,3 +9,5 @@ Nel repository sono conservati:
 3) <b>Dizionari_di_campo.xslx</b> -  Lista dei vocabolari chiusi per la corretta compilazione dei campi: colore, definizione, seolo, categoria, alterazioni
 
 4) <b>Tecniche.skos</b> - Vocabolario controllato relativo alle tecniche fotografiche
+
+5) una cartella di <b>esempi</b> compilati
