@@ -12,4 +12,4 @@ Nel repository sono conservati:
 
 4) <b>Tecniche.skos</b> - Vocabolario controllato relativo alle tecniche fotografiche
 
-5) una cartella di <b>esempi</b> compilati
+5) Una cartella di <b>esempi</b> compilati
