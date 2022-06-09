@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scons xsi:schemaLocation="http://www.san.beniculturali.it/scons2 http://www.san.beniculturali.it/tracciato/scons2.xsd" xmlns="http://www.san.beniculturali.it/scons2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<info>
+		<evento dataEvento="2022-06-10T18:00:00" tipoEvento="creazione">
+			<agente id="idagente" tipo="persona">
+				<!-- Corrisponde al primo redattore della descrizione-->
+				<nome>Chiara</nome>
+				<cognome>Veninata</cognome>
+			</agente>
+		</evento>
+		<evento dataEvento="2022-06-28T18:00:00" tipoEvento="creazione" tipologia="esportazione">
+			<agente id="idagente" tipo="software">
+				<!-- Corrisponde al software che ha effettuato l'esportazione-->
+				<denominazione>XDAMS</denominazione>
+			</agente>
+		</evento>
+	</info>
+	<identificativi>
+		<identificativosistema>XDAMS</identificativosistema>
+		<identificativo tipo="ICCD" href="https://dati.cultura.gov.it.beniculturali.it/CulturalInstituteOrSite/15fef548c81820bc1281fb132441d897">108188</identificativo>
+		<altroidentificativo tipo="IPA" href="https://indicepa.gov.it/ipa-portale/consultazione/domicilio-digitale/ricerca-area-organizzativa-omogenea/scheda-area-organizzativa-omogenea/A16D6BA">A16D6BA</altroidentificativo>
+		<altroidentificativo tipo="DBUNICO" href="https://cultura.gov.it/luogo/istituto-centrale-per-il-catalogo-e-la-documentazione-1">108188</altroidentificativo>
+		<altroidentificativo tipo="SIUSA" href="https://siusa.archivi.beniculturali.it/cgi-bin/siusa/pagina.pl?TipoPag=strumcorr&amp;Chiave=30771">30771</altroidentificativo>
+	</identificativi>
+	<denominazione lingua="ita">Istituto Centrale per il Catalogo e la Documentazione</denominazione>
+	<tipologia>TesauroSAN/organo_e_ufficio_statale_periferico_del_periodo_postunitario</tipologia>
+	<localizzazioni>
+		<localizzazione principale="S" consultazione="S" identificativo="1" privato="N">
+			<denominazione>Sede dell'Istituto Centrale per il Catalogo e la Documentazione</denominazione>
+			<indirizzo lingua="ita" paese="ITA" regione="Lazio" provincia="RM" comune="Roma" cap="00153" denominazioneStradale="Via di San Michele" numeroCivico="18"/>
+			<contatto tipo="telefono">06/67235220</contatto>
+			<contatto tipo="mail">ic-cd@beniculturali.it</contatto>
+			<contatto tipo="pec">mbac-ic-cd@mailcert.beniculturali.it</contatto>
+			<contatto tipo="sitoweb" label="Sito web istituzionale">http://iccd.beniculturali.it</contatto>
+			<orario> Sala studio Fototeca: Lunedì-Venerdi 9 - 13</orario>
+			<accesso>Descrizione dell'accesso in Fototeca</accesso>
+		</localizzazione>
+			</localizzazioni>
+	<descrizione>L' Istituto Centrale per il Catalogo e la Documentazione (ICCD) è un istituto del Ministero della Cultura dotato di autonomia scientifica e amministrativa; afferisce alla  Direzione generale Educazione e ricerca.....	</descrizione>
+	<servizi/>
+	<relazioni>
+		<relazione tipo="URL" href="http://iccd.beniculturali.it">Sito istituzionale</relazione>
+		<relazione tipo="URL" href="https://www.catalogo.beniculturali.it/">Catalogo generale dei beni culturali</relazione>
+		<relazione tipo="URL" href="https://scenedaunpatrimonio.beniculturali.it/">Scene da un patrimonio</relazione>
+	</relazioni>
+</scons>
