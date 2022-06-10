@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xsi:schemaLocation="http://ead3.archivists.org/schema/ http://www.san.beniculturali.it/tracciato/ead3.xsd" xmlns="http://ead3.archivists.org/schema/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<control repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" scriptencoding="iso15924" langencoding="iso639-2b">
+		<recordid>IT-ICCD-PHOTO-0044-002576</recordid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>Frascati - Veduta di Villa Aldobrandini</titleproper>
+			</titlestmt>
+		</filedesc>
+		<maintenancestatus value="new"/>
+		<maintenanceagency>
+			<agencyname>ICCD</agencyname>
+		</maintenanceagency>
+		<languagedeclaration>
+			<language langcode="ita"/>
+			<script scriptcode="Italian"/>
+		</languagedeclaration>
+		<conventiondeclaration>
+			<citation>XDAMS</citation>
+		</conventiondeclaration>
+		<maintenancehistory>
+			<maintenanceevent>
+				<eventtype value="created"/>
+				<eventdatetime>2022-06-22</eventdatetime>
+				<agenttype value="machine"/>
+				<agent>XDAMS</agent>
+			</maintenanceevent>
+		</maintenancehistory>
+	</control>
+	<archdesc level="item">
+		<did>
+			<unitid localtype="XDAMS" identifier="IT-ICCD-PHOTO-0044-002576">IT-ICCD-PHOTO-0044-002576</unitid>
+			<unitid encodinganalog="ACC" identifier="612404"/>
+			<unitid encodinganalog="NCT" identifier="1200938012"/>
+			<unittitle localtype="titoloattribuito">Frascati - Veduta di Villa Aldobrandini <genreform>
+					<part>Fotografia</part>
+				</genreform>
+				<title>
+					<part>Titolo non definito</part>
+				</title>
+			</unittitle>
+			<unittitle encodinganalog="SGLA">
+				<date encodinganalog="LRD"><![CDATA[1900-1924 ca.]]></date>
+				<geogname encodinganalog="LRCR" id="place_r_12">
+					<part>Lazio</part>
+				</geogname>
+				<title encodinganalog="SGLT">
+					<part>Titolo non definito</part>
+				</title>
+				<geogname encodinganalog="LRCP" id="place_p_258">
+					<part>Roma</part>
+				</geogname>
+				<geogname encodinganalog="LRCC" id="place_c_058039">
+					<part>Frascati</part>
+				</geogname>
+			</unittitle>
+			<unitdatestructured encodinganalog="DT">
+				<dateset>
+					<daterange altrender="DTZ">
+						<fromdate standarddate="19000101">1900</fromdate>
+						<todate standarddate="19243112">1924</todate>
+					</daterange>
+					<datesingle>1900-1924 ca.</datesingle>
+				</dateset>
+			</unitdatestructured>
+			<physloc encodinganalog="LDCS"><![CDATA[Depositi climatizzati]]></physloc>
+			<repository>
+				<name encodinganalog="UBFP">
+					<part><![CDATA[ICCD-GFN]]></part>
+					<part><![CDATA[Contenitori]]></part>
+					<part><![CDATA[Becchetti]]></part>
+				</name>
+			</repository>
+			<physdescstructured physdescstructuredtype="materialtype" coverage="whole" encodinganalog="MT">
+				<quantity>1</quantity>
+				<unittype>fototipo</unittype>
+				<physfacet encodinganalog="MTX" altrender="colore"><![CDATA[BN]]><genreform encodinganalog="MTC" id="technique_38">
+						<part>gelatina ai sali d'argento</part>
+					</genreform>
+				</physfacet>
+				<dimensions encodinganalog="MIS"><![CDATA[194x244  mm]]></dimensions>
+			</physdescstructured>
+			<materialspec encodinganalog="OGTD"><![CDATA[positivo]]></materialspec>
+			<repository id="IT-ICCD-SCONS-0001-000011">
+				<corpname>
+					<part>Istituto Centrale per il Catalogo e la Documentazione</part>
+				</corpname>
+			</repository>
+			<origination>
+				<name encodinganalog="AUT" id="IT-ICCD-EACCPF-0001-017856">
+					<part>Neuen Photographischen Gesellschaft (N.P.G.)</part>
+				</name>
+			</origination>
+			
+	
+	
+			<daoset>
+				<dao daotype="derived" coverage="whole" linkrole="image/tiff" href="https://iccd.site02.nivolapiemonte.it/IT-ICCD-PHOTO-0044-000001/001/FB001546.TIF"/>
+				
+			<dao daotype="derived" coverage="whole" linkrole="image/tiff" href="https://iccd.site02.nivolapiemonte.it/IT-ICCD-PHOTO-0044-000001/001/FB001546_verso.TIF"/></daoset>
+		</did>
+		<odd encodinganalog="NSC">
+			<p><![CDATA[La N.P.G. (Neuen Photographiscen Gesellschaft), grande casa fotografica di Berlino, è attiva all'inizio del secolo a Roma dove esegue una serie di vedute della città e dintorni. Dall'analisi dei soggetti rappresentati in questa raccolta si deduce che non tutte le fotografie sono state scattate dai fotografi della casa tedesca perché qualche immagine figura anche nei cataloghi dei vedutisti romani.]]></p>
+		</odd>
+		<phystech encodinganalog="STC">
+			<p altrender="STCS"><![CDATA[piega; crettature; distacco; lacuna]]></p>
+		</phystech>
+		<processinfo>
+			<p>
+				<persname>
+					<part>Valentini</part>
+					<part>Stefano</part>
+				</persname>
+			</p>
+		</processinfo>
+		<originalsloc encodinganalog="INVN">
+			<p>
+				<num><![CDATA[FB001546]]></num>
+			</p>
+		</originalsloc>
+		<controlaccess>
+			<name>
+				<part encodinganalog="CTG">Architettura</part>
+				<part encodinganalog="CTG">Paesaggio</part>
+			</name>
+		</controlaccess>
+		<accessrestrict audience="external" altrender="1">
+			<p><![CDATA[0]]></p>
+		</accessrestrict>
+		<scopecontent encodinganalog="ISE">
+			<p><![CDATA[Edizione inalterabile. - FRASCATI GIARDINO. - 1393]]></p>
+		</scopecontent>
+		<processinfo encodinganalog="CMP">
+			<p>
+				<persname encodinganalog="FUR">
+					<part>Valentini</part>
+					<part>Stefano</part>
+				</persname>
+				<persname>
+					<part>D'Onofrio</part>
+					<part>Gabriella</part>
+				</persname>
+				<date encodinganalog="CMPD">2014</date>
+			</p>
+		</processinfo>
+		<relations>
+			<relation relationtype="resourcerelation">
+				<relationentry localtype="ComplArchSup">IT-ICCD-PHOTO-0044-000922</relationentry>
+			</relation>
+			<relation relationtype="resourcerelation">
+				<relationentry localtype="ComplArchPrec">IT-ICCD-PHOTO-0044-002575</relationentry>
+			</relation>
+		</relations>
+	</archdesc>
+</ead>
