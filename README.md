@@ -14,7 +14,7 @@ Gli schemi dichiarati nel documento e la relativa documentazione sono disponibil
 
 Per quanto riguarda il subset degli elementi identificati per la descrizione delle fotografie, il tracciato descrittivo espresso secondo uno standard di tipo archivistico (EAD 3) è totalmente  compatibile con la scheda F  di cui vengono anche riutilizzati  i vocabolari già formalizzati, come quelli di materie e tecnica, datazioni, alterazione e deterioramenti, ecc.
 
-Nel repository sono conservati:
+Nel repository sono pubblicati:
 
 1) <b>ICCD-Fotografia_tracciato_Regole.xslx</b> - Il data model in uso presso ICCD in formato tabellare, con un riferimento nominale ai campi della scheda F e con una apposita colonna dedicata all'esplicitazione delle regole da seguire per la corretta compilazione dei record relativi alle fotografie. In giallo sono indicati i campi la cui compilazione è raccomandata per una corretta descrizione dei fototipi d'archivio
 
