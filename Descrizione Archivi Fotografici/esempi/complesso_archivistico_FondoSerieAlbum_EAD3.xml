@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xsi:schemaLocation="http://ead3.archivists.org/schema/ http://www.san.beniculturali.it/tracciato/ead3.xsd" xmlns="http://ead3.archivists.org/schema/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<control repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" scriptencoding="iso15924" langencoding="iso639-2b">
+		<recordid>IT-ICCD-PHOTO-0044-000001</recordid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>Archivio Piero Becchetti</titleproper>
+			</titlestmt>
+		</filedesc>
+		<maintenancestatus value="new"/>
+		<maintenanceagency>
+			<agencyname>Istituto Centrale per il Catalogo e la Documentazione</agencyname>
+		</maintenanceagency>
+		<languagedeclaration>
+			<language langcode="ita"/>
+			<script scriptcode="Italian"/>
+		</languagedeclaration>
+		<conventiondeclaration>
+			<citation>ISAD (G)</citation>
+			<!-- il valore è ipotetico ed ha un mero scopo esemplificativo -->
+		</conventiondeclaration>
+		<maintenancehistory>
+			<maintenanceevent>
+				<eventtype value="derived"/>
+				<eventdatetime>2022-06-22</eventdatetime>
+				<agenttype value="human"/>
+				<agent>Gruppo di lavoro ICCD</agent>
+			</maintenanceevent>
+		</maintenancehistory>
+	</control>
+	<archdesc level="fonds">
+		<did>
+			<physdesc>8300 fototipi</physdesc>
+			<repository>
+				<corpname identifier="IT-ICCD-SCONS-0001-000011">
+					<part>Istituto Centrale per il Catalogo e la Documentazione</part>
+				</corpname>
+				<address>
+					<addressline>Via di San Michele - 00153 Roma</addressline>
+				</address>
+			</repository>
+			<origination>
+				<corpname identifier="IT-ICCD-EACCPF-0001-017855">
+					<part>Piero Becchetti</part>
+				</corpname>
+			</origination>
+			<unitid localtype="ICCD" identifier="IT-ICCD-PHOTO-0044-000001">IT-ICCD-PHOTO-0044-000001</unitid>
+			<unittitle label="denominazione" lang="ita">Archivio Piero Becchetti</unittitle>
+			<unitdatestructured>
+				<daterange>
+					<fromdate standarddate="18400101">1840</fromdate>
+					<todate standarddate="19601231">1960</todate>
+				</daterange>
+			</unitdatestructured>
+		</did>
+		<scopecontent>
+			<p><![CDATA[<p>La collezione di Piero Becchetti, grande collezionista e studioso della fotografia, è stata acquistata dall'ICCD in due lotti, il 4 novembre 1992 e il 14 luglio 1995. Comprende circa quarantamila positivi fotografici di varia misura, realizzati con diverse tecniche di stampa e databili tra la seconda metà del XIX secolo e la prima metà del XX secolo.<br />A questo nucleo si aggiunge una piccola raccolta di macchinari fotografici e un'importante biblioteca con volumi e periodici specializzati.<br />La collezione è articolata in dieci serie:<br />La prima serie, Unicum, è composta da tre sottoserie: 40 dagherrotipi, databili tra il 1840-50, di cui 35 ritratti e 5 riproduzioni di quadri; 18 ambrotipi e 83 ferrotipi tra ritratti e gruppi di famiglia. Si tratta di una serie aggregata per omogeneità formale e per esigenze pratiche di conservazione, completamente restaurata.<br />La seconda serie, gli Album, composta da 240 album, di misure diverse, databili tra la seconda metà del XIX secolo e gli anni '40 del XX, è formata da positivi di vari autori. La tipologia degli album è varia, si tratta di oggetti rilegati in pelle, in tessuto e in cartone che possono essere suddivisi essenzialmente in album di viaggio e in album di famiglia, con alcune eccezioni. All'interno della serie, tra gli album di viaggio, sono i tredici volumi composti da Giulio e Mario Grazioli Lante della Rovere durante i loro viaggi in Oriente (Cina, Indonesia, Giappone) e in America che contengono fotografie di F. Beato, W. Saunders, E. Watkins, E. Muybridge, S. Bourne.<br />La terza serie, i Contenitori, è composta da 4005 positivi fotografici ordinati per autore, tra cui Filippo Belli, Giacomo Caneva, Carlo Baldassarre Simelli, Filippo Lais, Alfonso Bernoud, Michele Mang, Romualdo Moscioni,  Fratelli Alinari, Giacomo Brogi, Cesare Vasari, James Anderson.<br />Per lo più si tratta di stampe all'albumina, ma sono presenti anche carte salate, gelatine ai sali d'argento, stampe al carbone, aristotipi.<br />La quarta serie, le Cartelline per Autore, ordinate alfabeticamente in 903 cartelline cartacee con iscrizioni autografe di Piero Becchetti sul fronte, contengono 3946 positivi. Si tratta di una raccolta enciclopedica della produzione dei fotografi operanti a Roma e in Italia, importante anche per la presenza di quasi tutte le tipologie di stampa usate in quell'arco temporale.<br />La quinta serie, il Formato Visita, è composta da 5268 positivi ordinati topograficamente per sede dello stabilimento fotografico. Si tratta principalmente di toponimi italiani, solo una piccola parte è composta da località estere. I positivi non sono tutti attribuiti. Molti riportano le firme dei più importanti fotografi dell'epoca, tra cui Fratelli Alinari, Fratelli D'Alessandri, Altobelli e Molins, Sommer & Behles, Lorenzo Suscipj, Giacomo Brogi, Luigi Montabone, Lodovico Tuminello, Foto Vasari.<br />La sesta serie, il Formato Gabinetto, è composta da 169 positivi ordinati topograficamente per sede dello stabilimento fotografico, esclusivamente di località estere.<br />La settima serie, le Stereoscopie, è composta da 5187 stereoscopie italiane e straniere di autori vari, divise per località con alcuni soggetti di notevole interesse storico: Terremoto di Messina 1908, Chicago dopo l'incendio, Esposizioni universali di Londra e di Parigi, Assedio di Parigi 1870/1. I positivi non sono tutti attribuiti, ma molti sono firmati da importanti fotografi, tra cui Fratelli Alinari, G. Altobelli, Barker Photographer, A. Bernoud, G. Brogi, T. Cuccioni, A. Mauri, H.C. White, R. Rive, Sommer & Behles, Van Lint.<br />L'ottava serie, il Grande formato, è composta da 3205 positivi contenuti in sette scatole e trentotto cartelle. Si tratta di una serie aggregata per omogeneità formale e per esigenze pratiche di conservazione. La prima partizione ha come soggetto esclusivo vedute della città di Roma, con alcune fotografie di C.B. Simelli o l'inaugurazione del restauro dello Stadio di Domiziano con il Re Umberto I e la Regina Margherita. Inoltre sono presenti fotografie di importante significato storico: Garibaldi in visita agli scavi di Pompei, sventramenti della Roma fascista, simposio nel ventre del cavallo del gruppo equestre al Vittoriano, ecc.<br />La nona serie, i Macchinari Fotografici, è composta da 34 visori stereoscopici, 13 obiettivi antichi, 3 alternatori per stereoscopie, 2 ingranditori, 3 bacinelle antiche per sviluppi, 5 macchine fotografiche antiche. La serie è tra i materiali esposti nei locali museali dell'ICCD.<br />La decima serie, la Biblioteca, completa la collezione con 1300 volumi di argomento fotografico, tra cui edizioni ottocentesche e raccolte di periodici specializzati.</p>]]></p>
+		</scopecontent>
+		<accessrestrict>
+			<p>
+				<!--indicare le condizioni di accesso ...-->
+			</p>
+		</accessrestrict>
+		<userestrict>
+			<p>
+				<!--indicare eventuali restrizioni all'utilizzo...-->
+			</p>
+		</userestrict>
+		<processinfo>
+			<p>Pubblicata</p>
+		</processinfo>
+		<controlaccess>
+			<subject>
+				<part>arte</part>
+			</subject>
+			<subject>
+				<part>eventi</part>
+			</subject>
+			<subject>
+				<part>documentazione</part>
+			</subject>
+			<subject>
+				<part>Roma</part>
+			</subject>
+			<subject>
+				<part>storia</part>
+			</subject>
+			<subject>
+				<part>Italia</part>
+			</subject>
+			<subject>
+				<part>ritrattistica</part>
+			</subject>
+			<subject>
+				<part>viaggi</part>
+			</subject>
+			<title>
+				<part>Collezione Becchetti di Belli, Filippo, Mang, Michele, Saunders, William Thomas, Beato, Felice, Bourne, Samuel, Simelli, Carlo Baldassarre (XX)</part>
+			</title>
+		</controlaccess>
+		<!-- DA QUI INIZIA LA DESCRIZIONE DI UNA SERIE DI ESEMPIO -->
+		<dsc>
+			<c level="series" id="IT-ICCD-PHOTO-0044-000002">
+				<did>
+					<physdesc>
+						<!--indicare consistenza della serie-->
+					</physdesc>
+					<repository>
+						<corpname identifier="IT-ICCD-SCONS-0001-000011">
+							<part>Istituto Centrale per il Catalogo e la Documentazione</part>
+						</corpname>
+						<address>
+							<addressline>Via di San Michele - 00153 Roma</addressline>
+						</address>
+					</repository>
+					<origination>
+						<corpname identifier="IT-ICCD-EACCPF-0001-017855">
+							<part>Piero Becchetti</part>
+						</corpname>
+					</origination>
+					<unitid localtype="XDAMS" identifier="IT-ICCD-PHOTO-0044-000002"/>
+					<unittitle localtype="denominazione" lang="ita">Album (inv. nn. 4006-4072, 4684-4869)</unittitle>
+					<unitdatestructured>
+						<daterange>
+							<fromdate standarddate="1850101">1850</fromdate>
+							<todate standarddate="19401231">1940</todate>
+						</daterange>
+					</unitdatestructured>
+				</did>
+				<custodhist>
+					<p>
+						<!-- inserire, se disponibili, informazioni sulla storia della custodia archivistica e sulle modalità con cui l'archivio è giusto al soggetto conservatore-->
+					</p>
+				</custodhist>
+				<scopecontent>
+					<p>La serie degli Album è composta da 240 oggetti, di misure diverse, databili tra la seconda meta del XIX sec e gli anni ’40 del XX. La tipologia degli album è varia, si tratta di oggetti rilegati in pelle, in tessuto e in cartone, sostanzialmente si tratta di album di viaggio e album di famiglia, ma ci sono interessanti eccezioni. Tutti gli album sono stati condizionati in scatole di cartone e stoffa idonee alla conservazione. Tutti gli album sono stati spolverati, si è proceduto al restauro della legatura e del supporto secondario, si è predisposta un’interfoliazione e sono stati riposti, all’interno delle scatole, incamiciati con una sacca di tela di cotone incolore.</p>
+				</scopecontent>
+				<accessrestrict>
+					<p>
+						<!--indicare, se disponibili,  le condizioni di accesso ...-->
+					</p>
+				</accessrestrict>
+				<userestrict>
+					<p>
+						<!--indicare eventuali restrizioni all'utilizzo...-->
+					</p>
+				</userestrict>
+				<processinfo>
+					<p>Pubblicata</p>
+				</processinfo>
+				<relations>
+					<relation relationtype="resourcerelation">
+						<relationentry localtype="complArchSup">IT-ICCD-PHOTO-0044-000001</relationentry>
+					</relation>
+					<relation relationtype="resourcerelation">
+						<relationentry localtype="complArchPrec">IT-ICCD-PHOTO-0044-010260</relationentry>
+					</relation>
+				</relations>
+				<!-- DA QUI INIZIA LA DESCRIZIONE DI UN ALBUM DI ESEMPIO -->
+				<c level="recordgrp" otherlevel="album" id="IT-ICCD-PHOTO-0044-010010">
+					<did>
+						<unitid encodinganalog="ACC" identifier="11"/>
+						<unitid encodinganalog="NCTN"><![CDATA[FB004016]]></unitid>
+						<origination>
+							<persname encodinganalog="AUTN" id="IT-ICCD-EACCPF-0001-000850">
+								<part>Bertrand, A.</part>
+							</persname>
+						</origination>
+						<physloc encodinganalog="LDCS"><![CDATA[Depositi climatizzati - stanza 2 - scaffale M]]></physloc>
+						<unittitle><![CDATA[Album n. 011 - Rome]]></unittitle>
+						<materialspec encodinganalog="OGTD">
+							<emph altrender="QNTN">19</emph>
+						</materialspec>
+						<abstract encodinganalog="SGTI"><![CDATA[Roma - Vedute - Monumenti - Piccola guida artistica di Roma in lingua francese con immagini fotografiche e testo a fronte]]></abstract>
+						<physdesc encodinganalog="MT" label="specific">
+							<emph altrender="MIS">135x215x15 mm</emph>
+						</physdesc>
+						<unitdate encodinganalog="DT">
+							<emph><![CDATA[1850 ca]]></emph>
+						</unitdate>
+						<unitdatestructured encodinganalog="DTZ">
+							<daterange>
+								<fromdate>1840</fromdate>
+								<todate>1860</todate>
+							</daterange>
+						</unitdatestructured>
+					</did>
+					<scopecontent encodinganalog="DES">
+						<p><![CDATA[Album con copertina telata di colore marrone scuro, piatti con cornice a impressione e titolazione dorata a lettere capitali. Al recto di ogni pagina è incollata una stampa all'albumina con cornicetta e didascalia a stampa - ogni immagine è corredata di una pagina esplicativa in lingua francese]]></p>
+					</scopecontent>
+					<phystech encodinganalog="STC">
+						<p altrender="STCS">restaurato - interfoliato</p>
+					</phystech>
+					<scopecontent encodinganalog="ISE">
+						<p><![CDATA[sul piatto titolazione a lettere capitali: ROME - sul frontespizio: ALBUM ARTISTIQUE/ Vues photographiques des Principaux Monuments/ de/ ROME/ Par A. BERTRAND/ AVEC/ Notes explicatives/ Par L. PARIS]]></p>
+					</scopecontent>
+					<processinfo encodinganalog="CMP">
+						<p>
+							<date encodinganalog="CMPD">
+								<emph>2020</emph>
+							</date>
+							<persname encodinganalog="CMPN">
+								<part>Frisoni</part>
+							</persname>
+							<persname encodinganalog="FUR">
+								<part>Valentini</part>
+							</persname>
+						</p>
+					</processinfo>
+						<relations>
+					<relation relationtype="resourcerelation">
+						<relationentry localtype="complArchSup">IT-ICCD-PHOTO-0044-000002</relationentry>
+					</relation>
+				</relations>
+				</c>
+			</c>
+		</dsc>
+	</archdesc>
+</ead>
